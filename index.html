@@ -15,16 +15,9 @@
 
   <body>
     <header>
-      <div></div>
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">CRUD</a>
+          <a class="navbar-brand" href="index.html">CRUD</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,56 +29,27 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">
+                        Admin
+                    </a>
+                </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main class="container">
       <h1 class="mt-5 text-center">Administrador de productos</h1>
       <hr class="mb-5" />
-      <section class="p-3 bg-light">
-        <h4>Cargar productos</h4>
-        <hr />
-        <form id="formProducto">
-          <div class="mb-3">
-            <label for="" class="form-label">Codigo</label>
-            <input
-              type="number"
-              class="form-control"
-              id="codigo"
-              
-              //onblur="validarCampoRequerido(this)"
-            />
-            <div class="invalid-feedback">Este campo es requerido</div>
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Producto</label>
-            <input
-              type="text"
-              class="form-control"
-              id="producto"
-            />
-            <div class="invalid-feedback">Este campo es requerido</div>
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Descripción</label>
-            <textarea type="" class="form-control" id="descripcion" ></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Cantidad</label>
-            <input type="number" class="form-control" id="cantidad" />
-            <div class="invalid-feedback">Este campo es requerido</div>
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">URL</label>
-            <input type="" class="form-control" id="url" />
-          </div>
-
-          <button type="submit" class="btn btn-primary">Guardar</button>
-          <div class="alert alert.danger mt-4 d-none" role="alert" id="msjAlert">
-            <p>Debe completar los campos marcados</p>
-          </div>
-        </form>
-      </section>
+      
     </main>
     <footer></footer>
 
@@ -94,6 +58,6 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script src="js/validaciones.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
